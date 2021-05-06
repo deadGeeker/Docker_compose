@@ -20,7 +20,7 @@
 
 ##### 测试安装：
 + $ docker-compose --version
-+ ![avatar](/png/https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/1.PNG)
++ ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/1.PNG)
 
 ### Docker-Compose的相关概念
 ---
@@ -132,7 +132,7 @@
 + 然后再次让我们的代码跑起来！！！
 + ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/5.PNG)
 + 可以看到，运行成功，服务跑起来了，让我们在浏览器中输入127.0.0.1：8001
-+ ![avatar](/png/https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/2.PNG)
++ ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/2.PNG)
 + 最后，让我们查看一下生成的镜像和容器，关于这里的指令有不清楚的可以移步到我的github项目[Docker学习之路](https://github.com/deadGeeker/Docker_pathtoGod/blob/main/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/%E7%9B%AE%E5%BD%95.md)
 + 查看生成的镜像
 + ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/6.PNG)
