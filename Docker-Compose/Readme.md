@@ -4,7 +4,7 @@
 ---
 ##### 安装前提
 + 以我的Linux虚拟机为例，必须安装Docker-Engine以后才能安装和运行Docker-Compose
-###### 关于Docker-Engine的安装和命令教程可以移步我的github项目，项目中有什么需要进步的地方欢迎各位码友指出并私信，谢谢。  (https://github.com/deadGeeker/Docker_pathtoGod/blob/main/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/%E7%9B%AE%E5%BD%95.md)
+###### 关于Docker-Engine的安装和命令教程可以移步我的[github项目](https://github.com/deadGeeker/Docker_pathtoGod/blob/main/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/%E7%9B%AE%E5%BD%95.md)，项目中有什么需要进步的地方欢迎各位码友指出并私信，谢谢。  
 
 ##### 官方下载命令
 + $ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -20,7 +20,7 @@
 
 ##### 测试安装：
 + $ docker-compose --version
-+ ![avatar](/png/1.png)
++ ![avatar](/png/https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/1.PNG)
 
 ### Docker-Compose的相关概念
 ---
@@ -124,19 +124,19 @@
 + 万事俱备，只欠东风，让我们的代码跑起来！！！
 + 在docker_Compose/目录下执行：
 + $ docker-compose up
-+ ![avatar](/png/4.png)  
++ ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/4.PNG)  
 + 分析报错原因：<font color=red>Could not open requirements file</font>
 + 原来是在执行Dockerfile镜像时，会生成一个临时容器，临时容器在整个Dockerfile文件执行完毕时才 + 会退出，requirements file在本地文件中，容器文件中没有，所以我们要将requirements file复制到
 + 临时容器中，在Dockerfile中WORKDIR前加入：
 + + COPY ./ /web/
 + 然后再次让我们的代码跑起来！！！
-+ ![avatar](/png/5.png)
++ ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/5.PNG)
 + 可以看到，运行成功，服务跑起来了，让我们在浏览器中输入127.0.0.1：8001
 + ![avatar](/png/2.png)
 + 最后，让我们查看一下生成的镜像和容器，关于这里的指令有不清楚的可以移步到我的github项目[Docker学习之路](https://github.com/deadGeeker/Docker_pathtoGod/blob/main/%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/%E7%9B%AE%E5%BD%95.md)
 + 查看生成的镜像
-+ ![avatar](/png/6.png)
++ ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/6.PNG)
 + 查看生成的容器
-+ ![avatar](/png/7.png)
++ ![avatar](https://github.com/deadGeeker/Docker_compose/blob/main/Docker-Compose/png/7.PNG)
 ---
 使用compose一键生成多应用服务的讲述到此为止，如文档中有需要提高的地方，欢迎各位码友指出，中国的软件业兴旺就靠各位了！！！
